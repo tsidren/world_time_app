@@ -1,29 +1,70 @@
-# world_time_app
-this deletes your Build folder and
-**flutter clean**
+# 🌍 World Time App (Flutter)
 
-and when you run build again it re-builds it
-this line creates the apk according to your CPU architecture.
-**flutter build apk --release --target-platform android-arm,android-arm64,android-x64**
+A simple Flutter application that fetches and displays the current time for various global locations using the [timeapi.io](https://timeapi.io) API. The app updates its UI based on the time of day (day or night) and allows users to choose a location.
 
-and also add this line in the 'android/app/src/main/AndroidManifest.xml' file just before the <application> tag
-this line make your apk app have the internet permission because what happens without this is 
-the app won't have the internet and also there is minimal error handling, so a grey screen appears only
-**<uses-permission android:name="android.permission.INTERNET"/>**
 
-app project for world time, this uses 
-'timeapi.io' API to fetch the time related details, with location parameter.
-and display it cleanly.
+## 🚀 Features
 
-## Getting Started
+- Real-time time zone data from an external API
+- Day/night UI themes based on fetched data
+- Location selection using navigation
+- Smooth transitions with loading animation
+- Fully responsive for Android devices
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## 📲 App Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div>
+    <p>
+      This Flutter app displays world time based on location using <code>timeapi.io</code>.
+      It dynamically updates the background to reflect day or night and allows the user
+      to edit the selected location via a clean UI.
+    </p>
+  </div>
+<p align="center">
+  <img src="demo.gif" width="200" alt="App Demo" />
+</p>
+
+## 🛠 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/tsidren/world_time_app.git
+cd world_time_app
+```
+### 2. Get the dependencies
+```bash
+flutter pub get
+```
+### 3. Ensure Internet permission
+In <code>android/app/src/main/AndroidManifest.xml</code> add the following line before the <code><application></code> tag:
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+## 🧹 Clean the project
+Before building the APK, run:
+```bash
+flutter clean
+```
+
+## 📦 Build a release APK
+To generate an APK that supports most Android devices:
+```bash
+flutter build apk --release --target-platform android-arm,android-arm64,android-x64
+```
+This builds the app for multiple CPU architectures so it can run on real devices.
+## 🔧 Notes
+- This app uses <code>http</code> package for API calls. Ensure you're handling network errors appropriately.
+- Release builds suppress runtime errors — so missing permissions or unhandled exceptions may lead to a blank/grey screen.
+- Testing on a real device is recommended for API-related features.
+## 📍 API Used
+- Base URL:  <code>https://timeapi.io</code>
+- Endpoint:
+```
+https://timeapi.io/api/time/current/zone?timeZone=Asia%2fKolkata
+```
+---
+Made with ❤️ using Flutter.
