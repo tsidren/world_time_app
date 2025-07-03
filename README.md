@@ -58,7 +58,7 @@ This builds the app for multiple CPU architectures so it can run on real devices
 ### 1. Creating an Android Emulator
 - In the top panel (title bar), you can see the <code>Tool</code> tab. Then open the <code>Device Manager</code>\
 or\
-In the right panel of tools, you can see these![Devive_manager](media_files/device_manager.png) symbols. \
+In the right panel of tools, you can see these <img src="media_files/device_manager.png" alt="Device Manager and Running Devices" style="vertical-align: middle;"/> symbols. \
 upper one - <code>device manager</code> \
 lower one - <code>running devices</code>
 - Now add a new device by clicking on the <code>➕</code> icon --> Create a Virtual Device
@@ -68,7 +68,7 @@ lower one - <code>running devices</code>
 
 ### (1. optional) Adding your own phone in for the Emulation
 - Turn on the <code>developer options</code>, <code>USB debugging</code> and <code>install via USB</code> in your phone. \
-_You can watch a tutorial, it the options can vary on your device and the android version._
+_You can watch a tutorial, the options can vary on your device and the android version._
 - Now connect your phone to your computer using a cable, and turn on file transfer on your phone when it pops up.
 - Your phone will show in your <code>device manager</code>. You can start using it as an Emulator.
 
@@ -90,5 +90,16 @@ You app will take some time loading up the app in the emulator. Wait patiently a
 ```
 https://timeapi.io/api/time/current/zone?timeZone=Asia%2fKolkata
 ```
+## 🔮 Future Work
+
+Here are some features and improvements planned for future versions of this app:
+
+- [ ] Appropriate App icon
+- [ ] Improve loading animations and UI
+- [ ] Add support for dark/light mode based on device settings
+- [ ] Show weather info alongside the time
+- [ ] Add local time caching for offline display
+- [ ] Improve error handling 
+
 ---
 Made with ❤️ using Flutter.
