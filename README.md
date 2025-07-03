@@ -20,7 +20,7 @@ A simple Flutter application that fetches and displays the current time for vari
     </p>
   </div>
 <p align="center">
-  <img src="media_file/demo.gif" width="200" alt="App Demo" />
+  <img src="media_files/demo.gif" width="200" alt="App Demo" />
 </p>
 
 ## 🛠 Setup Instructions
@@ -58,7 +58,7 @@ This builds the app for multiple CPU architectures so it can run on real devices
 ### 1. Creating an Android Emulator
 - In the top panel (title bar), you can see the <code>Tool</code> tab. Then open the <code>Device Manager</code>\
 or\
-In the right panel of tools, you can see these![Devive_manager](media_file/device_manager.png) symbols. \
+In the right panel of tools, you can see these![Devive_manager](media_files/device_manager.png) symbols. \
 upper one - <code>device manager</code> \
 lower one - <code>running devices</code>
 - Now add a new device by clicking on the <code>➕</code> icon --> Create a Virtual Device
